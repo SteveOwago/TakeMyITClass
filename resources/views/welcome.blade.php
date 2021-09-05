@@ -1230,7 +1230,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="widget widgets-company-info">
                         <div class="footer-bottom-logo pb-40">
-                            <img src="frontendIT/assets/images/logo.png" alt="" />
+                            <img src="frontendIT/assets/images/fav-icon/logo-white.jpg" alt="" />
                         </div>
                         <div class="company-info-desc">
                             <p>Condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus.
@@ -1383,5 +1383,4 @@
     <!-- jquery js -->
     </body>
 
-    <!-- Mirrored from html.dreamitsolution.net/techno/landing-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Sep 2021 07:24:14 GMT -->
 </html>
