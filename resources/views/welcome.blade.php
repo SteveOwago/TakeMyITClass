@@ -116,11 +116,12 @@
                                     <h1>Exams,or Assignment For Me</h1>
                                 </div>
                                 <div class="slider_text_desc pt-4">
-                                    <p>Morem upsum dolor set amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laboret dolore magna aliqua.</p>
+                                    <p>We are a Specialised Team to Help You With all your Online Course work Needs.
+                                        We cover and handle  Online Courses, Exams, Proctored exams in Programming Projects, Essays,assignments, Thesis, and Research papers in the Field of Technology, Programming, and Coding.</p>
                                 </div>
                                 <div class="slider_button pt-5 d-flex">
                                     <div class="button">
-                                        <a href="#">How IT Work <i class="fa fa-long-arrow-right"></i></a>
+                                        <a href="{{route('home')}}#how-it-works">How IT Work <i class="fa fa-long-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -153,17 +154,17 @@
                                     </div>
                                 </div>
                                 <div class="flipbox_title">
-                                    <h3>Provide All Kind Of IT Services</h3>
+                                    <h3>IT Online Courses</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="techno_flipbox_back">
                             <div class="techno_flipbox_inner">
                                 <div class="flipbox_title">
-                                    <h3>Provide All Kind Of IT Services</h3>
+                                    <h3>IT Online Courses</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Whether bringing new amazing products and services to market</p>
+                                    <p>We Handle IT related Online Courses. We guarantee to take care of your entire online IT course.</p>
                                 </div>
                             </div>
                         </div>
@@ -179,17 +180,17 @@
                                     </div>
                                 </div>
                                 <div class="flipbox_title">
-                                    <h3>Solution For All IT Security</h3>
+                                    <h3>Solution For Assignments and Quiz</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="techno_flipbox_back">
                             <div class="techno_flipbox_inner">
                                 <div class="flipbox_title">
-                                    <h3>Solution For All IT Security</h3>
+                                    <h3>Solution For Assignments and Quiz</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Whether bringing new amazing products and services to market</p>
+                                    <p>We will handle all your Assignment, quiz, and tests needs</p>
                                 </div>
                             </div>
                         </div>
@@ -205,17 +206,17 @@
                                     </div>
                                 </div>
                                 <div class="flipbox_title">
-                                    <h3>All IT Consultancy Solution</h3>
+                                    <h3>Continuous Communication with Our Team</h3>
                                 </div>
                             </div>
                         </div>
                         <div class="techno_flipbox_back">
                             <div class="techno_flipbox_inner">
                                 <div class="flipbox_title">
-                                    <h3>All IT Consultancy Solution</h3>
+                                    <h3>Continuous Communication with Our Team</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Whether bringing new amazing products and services to market</p>
+                                    <p>Provide explanations and a detailed approach in handling your Assignments and Quiz</p>
                                 </div>
                             </div>
                         </div>
@@ -231,17 +232,17 @@
                                     </div>
                                 </div>
                                 <div class="flipbox_title">
-                                    <h3>Best Experience Engineer </h3>
+                                    <h3>Best IT Experts in The Field </h3>
                                 </div>
                             </div>
                         </div>
                         <div class="techno_flipbox_back">
                             <div class="techno_flipbox_inner">
                                 <div class="flipbox_title">
-                                    <h3>Best Experience Engineer </h3>
+                                    <h3>Best IT Experts in The Field </h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Whether bringing new amazing products and services to market</p>
+                                    <p>Get to Work with the Best Software Engineers, and Developers to handle your Assignment</p>
                                 </div>
                             </div>
                         </div>
@@ -264,7 +265,7 @@
                     <div class="section_title text_center mb-60 mt-3">
 
                         <div class="section_sub_title uppercase mb-3">
-                            <h6>FEATURES CASE</h6>
+                            <h6>HOW IT WORKS</h6>
                         </div>
                         <div class="section_main_title">
                             <h1>Our Working Process</h1>
@@ -284,10 +285,10 @@
                                 <span>1</span>
                             </div>
                             <div class="single_work_content_title pb-2">
-                                <h4>Select A Project</h4>
+                                <h4>Initiate Chat and Submit Course/Assignment details</h4>
                             </div>
                             <div class="single_it_work_content_text pt-1">
-                                <p>We have the technology and industry expertise to develop solutions that can connect people and businesses across variety of mobile devices.</p>
+                                <p>Initiate Chat with our support team through the WhatsApp section below. Discuss the assignment, exams, online course details amd requirements with our Support Team</p>
                             </div>
                         </div>
                     </div>
@@ -299,10 +300,10 @@
                                 <span>2</span>
                             </div>
                             <div class="single_work_content_title pb-2">
-                                <h4>Project Analysis</h4>
+                                <h4>Agree and Pay Pocket Friendly Price</h4>
                             </div>
                             <div class="single_it_work_content_text pt-1">
-                                <p>We have the technology and industry expertise to develop solutions that can connect people and businesses across variety of mobile devices.</p>
+                                <p>Based on your Assignment/task details, we agree with you on considerable and pocket friendly prices. Our team will share the Payment Details</p>
                             </div>
                         </div>
                     </div>
@@ -314,10 +315,10 @@
                                 <span>3</span>
                             </div>
                             <div class="single_work_content_title pb-2">
-                                <h4>Deliver Result</h4>
+                                <h4>Communication and Deliver Result</h4>
                             </div>
                             <div class="single_it_work_content_text pt-1">
-                                <p>We have the technology and industry expertise to develop solutions that can connect people and businesses across variety of mobile devices.</p>
+                                <p>We will analyze your assignment and solve your solutions. We will keep you posted on the progress and result delivery through the chats.</p>
                             </div>
                         </div>
                     </div>
@@ -361,23 +362,23 @@
                                     </div>
                                 </div>
                                 <div class="flipbox_title">
-                                    <h3>Marketing Strategy</h3>
+                                    <h3>Proctored Exams, Tests and Quiz</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    <p>Our Experts in Various IT fields will Help you bag good grades from your exams</p>
                                 </div>
                             </div>
                         </div>
                         <div class="techno_flipbox_back " style="background-image:url(frontendIT/assets/images/feature1.jpg);">
                             <div class="techno_flipbox_inner">
                                 <div class="flipbox_title">
-                                    <h3>Free Online Course</h3>
+                                    <h3>Proctored Exams</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    <p>We use software to access your laptop during the exam time you only sit in front of your laptop. Can we discuss this on WhatsApp?</p>
                                 </div>
                                 <div class="flipbox_button">
-                                    <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
+                                    <a href="#">Chat on WhatsApp<i class="fa fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -393,23 +394,23 @@
                                     </div>
                                 </div>
                                 <div class="flipbox_title">
-                                    <h3>Interior Design</h3>
+                                    <h3>Software Application Use and Certification</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    <p>We handle online courses dealing with operating systems such as Windows, MacOs, and Linux</p>
                                 </div>
                             </div>
                         </div>
                         <div class="techno_flipbox_back " style="background-image:url(frontendIT/assets/images/feature2.jpg);">
                             <div class="techno_flipbox_inner">
                                 <div class="flipbox_title">
-                                    <h3>Interior Design</h3>
+                                    <h3>Software Application</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    <p>We Cover Windows online course on application use such as Microsoft office packages (Word, Excel, Access, Publisher).</p>
                                 </div>
                                 <div class="flipbox_button">
-                                    <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
+                                    <a href="#">Chat on WhatsApp<i class="fa fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -425,23 +426,23 @@
                                     </div>
                                 </div>
                                 <div class="flipbox_title">
-                                    <h3>Digital Services</h3>
+                                    <h3>Web Development</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    <p>Custom Web App Development Projects for your Final Projects</p>
                                 </div>
                             </div>
                         </div>
                         <div class="techno_flipbox_back " style="background-image:url(frontendIT/assets/images/feature3.jpg);">
                             <div class="techno_flipbox_inner">
                                 <div class="flipbox_title">
-                                    <h3>Online Marketing</h3>
+                                    <h3>Web Development Projects</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    <p>Our Software And Web Devs will help you finish your final year project. Let's Discuss About your Final Year Project on What's App</p>
                                 </div>
                                 <div class="flipbox_button">
-                                    <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
+                                    <a href="#">Chat on WhatsApp<i class="fa fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -457,23 +458,23 @@
                                     </div>
                                 </div>
                                 <div class="flipbox_title">
-                                    <h3>Product Selling</h3>
+                                    <h3>Essays and Assignment</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    <p>We help you write custom essays, research proposals, in the IT related topics</p>
                                 </div>
                             </div>
                         </div>
                         <div class="techno_flipbox_back " style="background-image:url(frontendIT/assets/images/feature3.jpg);">
                             <div class="techno_flipbox_inner">
                                 <div class="flipbox_title">
-                                    <h3>Online Product</h3>
+                                    <h3>Essays and Assignment</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    <p>We handle Thesis, Research Proposals, Software Documentations, Custom Essays on Different topics, and s/w Product Description Articles</p>
                                 </div>
                                 <div class="flipbox_button">
-                                    <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
+                                    <a href="#">Chat on WhatsApp<i class="fa fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -489,23 +490,23 @@
                                     </div>
                                 </div>
                                 <div class="flipbox_title">
-                                    <h3>Product Design</h3>
+                                    <h3>Grade Booster</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    <p>We also Take Halfway Done Courses to help you boost your overall mean Grade</p>
                                 </div>
                             </div>
                         </div>
                         <div class="techno_flipbox_back " style="background-image:url(frontendIT/assets/images/feature1.jpg);">
                             <div class="techno_flipbox_inner">
                                 <div class="flipbox_title">
-                                    <h3>24/7 Support</h3>
+                                    <h3>Boost Your Grades</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    <p>Share with us your details about the course and leave everything to us. We will help you scoop higher grades in the remaining Sections.</p>
                                 </div>
                                 <div class="flipbox_button">
-                                    <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
+                                    <a href="#">Chat on WhatsApp<i class="fa fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -521,23 +522,23 @@
                                     </div>
                                 </div>
                                 <div class="flipbox_title">
-                                    <h3>Digital Services</h3>
+                                    <h3>Database Development</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    <p>We handle online courses, assignments, and tests on in Database design and development</p>
                                 </div>
                             </div>
                         </div>
                         <div class="techno_flipbox_back " style="background-image:url(frontendIT/assets/images/feature2.jpg);">
                             <div class="techno_flipbox_inner">
                                 <div class="flipbox_title">
-                                    <h3>Social Marketing</h3>
+                                    <h3>Database Design</h3>
                                 </div>
                                 <div class="flipbox_desc">
-                                    <p>Porem asum molor sit amet, consectetur adipiscing do miusmod tempor.</p>
+                                    <p>MySql, NoSql, Oracle. We Develop Database design schemas, DFDs, ERDs, and Database Normalization Assignments, quizzes, and tasks</p>
                                 </div>
                                 <div class="flipbox_button">
-                                    <a href="#">Read More<i class="fa fa-angle-double-right"></i></a>
+                                    <a href="#">Chat on WhatsApp<i class="fa fa-angle-double-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -565,25 +566,25 @@
                         </div>
                         <div class="section_main_title">
                             <h1>Preparing For Your Success</h1>
-                            <h1>Provide Best <span>IT Solutions.</span></h1>
+                            <h1>Provide Best <span>Services</span></h1>
                         </div>
                         <div class="em_bar">
                             <div class="em_bar_bg"></div>
                         </div>
                         <div class="section_content_text bold pt-5">
-                            <p>Voice and Data Systems are crucial to the success or failure of most businesses. any companies provide laptops, cell phones.</p>
+                            <p>We are a team of professional experts in the IT, and Software engineering industry who are passionate and here to help you out to balance between work, online course and family time.</p>
                         </div>
                     </div>
                     <div class="singel_about_left mb-30">
                         <div class="singel_about_left_inner mb-3">
                             <div class="singel-about-content boder pl-4">
-                                <p>The standard chunk of Lorem Ipsum used since the 1500s is and reproduced below for those interested. Sections 1.10.32 and also 1.10.33 from “de Finibus Bonorum et Malorum" by Cicero are alse reproduced in their exact original form, accompanied</p>
-                                <p>The standard chunk of Lorem Ipsum used since the 1500s is and reproduced below for those interested</p>
+                                <p>Time flies fast, but it's good you are the pilot. Just control your time well away from hijackers. Save time profitably; Spend time productively!</p>
+                                <p>People who have fully prepared always save time. Albert Einstein was right to teach that if he is given six hours to chop down a tree, he would spend the first four sharpening the axes. When you are done with your action plans, work will be easier!</p>
                             </div>
                         </div>
                         <div class="singel_about_left_inner pl-4">
                             <div class="button two">
-                                <a href="#">More Details</a>
+                                <a href="#contact">Get In Touch</a>
                             </div>
                         </div>
                     </div>
@@ -1101,11 +1102,11 @@
                 <div class="col-lg-12">
                     <div class="section_title white text_center mb-60 mt-3">
                         <div class="section_sub_title uppercase mb-3">
-                            <h6>GET QUOTE</h6>
+                            <h6>CONTACT US</h6>
                         </div>
                         <div class="section_main_title">
-                            <h1>Make An</h1>
-                            <h1>Free Consultant</h1>
+                            <h1>Have Questions?</h1>
+                            <h1>We Got you Covered</h1>
                         </div>
                         <div class="em_bar">
                             <div class="em_bar_bg"></div>
@@ -1117,7 +1118,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="quote_wrapper">
-                        <form id="contact_form" action="http://html.dreamitsolution.net/techno/mail.php" method="POST" >
+                        <form id="contact_form" action="#" method="POST" >
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form_box mb-30">
@@ -1136,7 +1137,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form_box mb-30">
-                                        <input type="text" name="web" placeholder="Website">
+                                        <input type="text" name="subject" placeholder="Subject">
                                     </div>
                                 </div>
 
@@ -1145,7 +1146,7 @@
                                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Write a Message"></textarea>
                                     </div>
                                     <div class="quote_btn text_center">
-                                        <button class="btn" type="submit">Free Consultancy</button>
+                                        <button class="btn" type="submit">Submit Query</button>
                                     </div>
                                 </div>
                             </div>
@@ -1325,7 +1326,7 @@
                 <div class="col-lg-6 col-md-6">
                     <div class="footer-bottom-content">
                         <div class="footer-bottom-content-copy">
-                            <p>© 2020 Techno.All Rights Reserved. </p>
+                            <p>© 2021  &lt;TakeMyITClass/&gt;.All Rights Reserved. </p>
                         </div>
                     </div>
                 </div>
