@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Take My IT Class</title>
         <meta name="description" content="Take My IT Class, programming, exams ranging form assignment, online semester class, discussions, proctored exams, and programing quiz with our professional team.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -43,7 +45,6 @@
         <script type="text/javascript" src="frontendIT/assets/js/vendor/modernizr-3.5.0.min.js"></script>
 
     </head>
-    </head>
     <body class="antialiased">
 
     <!--==================================================-->
@@ -70,10 +71,10 @@
                             <li><a href="{{route('home')}}#services">Service</a></li>
                             <li><a href="{{route('home')}}#how-it-works">How it Works</a></li>
                             <li><a href="{{route('home')}}#portfolio">Portfolio</a></li>
-                            <li><a href="#contact.html">Contact</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                         <div class="donate-btn-header">
-                            <a class="dtbtn" href="#">Login</a>
+                            <a class="dtbtn" href="{{ route('login') }}">Login</a>
                         </div>
                     </nav>
                 </div>
@@ -91,8 +92,8 @@
                     <li><a href="{{route('home')}}#services">Service</a></li>
                     <li><a href="{{route('home')}}#how-it-works">How it Works</a></li>
                     <li><a href="{{route('home')}}#portfolio">Portfolio</a></li>
-                    <li><a href="#contact.html">Contact</a></li>
-                    <li><a href="#contact.html">Login</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="{{ route('login') }}">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -115,6 +116,12 @@
                                     <h1>Take My IT Class</h1>
                                     <h1>Exams,or Assignment For Me</h1>
                                 </div>
+                                @if (\Session::has('message'))
+                                    <div class="alert alert-success alert-block">
+                                        <button type="button" class="close" data-dismiss="alert">×</button>
+                                        <strong>{!! \Session::get('message') !!}</strong>
+                                    </div>
+                                @endif
                                 <div class="slider_text_desc pt-4">
                                     <p>We are a Specialised Team to Help You With all your Online Course work Needs.
                                         We cover and handle  Online Courses, Exams, Proctored exams in Programming Projects, Essays,assignments, Thesis, and Research papers in the Field of Technology, Programming, and Coding.</p>
@@ -626,8 +633,8 @@
                             <h6>PORTFOLIO</h6>
                         </div>
                         <div class="section_main_title">
-                            <h1>Our Latest Works For</h1>
-                            <h1>Your Business</h1>
+                            <h1>Our Latest Works To Consider</h1>
+                            <h1>Just For You</h1>
                         </div>
                         <div class="em_bar">
                             <div class="em_bar_bg"></div>
@@ -642,11 +649,10 @@
                     <div class="portfolio_nav">
                         <div class="portfolio_menu">
                             <ul class="menu-filtering">
-                                <li class="current_menu_item" data-filter="*">All Works</li>
-                                <li data-filter=".physics" >Branding</li>
-                                <li data-filter=".cemes" >Prototype</li>
-                                <li data-filter=".math" >UX Research</li>
-                                <li data-filter=".english">Web Design</li>
+                                <li class="current_menu_item" data-filter="*">All Works and Services</li>
+                                <li data-filter=".physics" >Proctored Exams</li>
+                                <li data-filter=".cemes" >Essays & Thesis</li>
+                                <li data-filter=".math" >Online Course</li>
                             </ul>
                         </div>
                     </div>
@@ -665,8 +671,8 @@
                                 <a class="portfolio-icon venobox vbox-item" data-gall="myportfolio" href="frontendIT/assets/images/portfolio/p1.jpg"><i class="fa fa-search-plus"></i></a>
                             </div>
                             <div class="single_portfolio_content_inner">
-                                <span>Prototype UX Research</span>
-                                <h2><a href="#">Digital Marketing</a></h2>
+                                <span>Online Course and Exams</span>
+                                <h2><a href="#">Cengage | Canvas</a></h2>
 
                             </div>
                         </div>
@@ -684,8 +690,8 @@
                                 <a class="portfolio-icon venobox vbox-item" data-gall="myportfolio" href="frontendIT/assets/images/portfolio/p2.jpg"><i class="fa fa-search-plus"></i></a>
                             </div>
                             <div class="single_portfolio_content_inner">
-                                <span>UX Research</span>
-                                <h2><a href="#">Awesome Creative</a></h2>
+                                <span>Project Management</span>
+                                <h2><a href="#">Management | Analysis | Development</a></h2>
 
                             </div>
                         </div>
@@ -703,8 +709,8 @@
                                 <a class="portfolio-icon venobox vbox-item" data-gall="myportfolio" href="frontendIT/assets/images/portfolio/p3.jpg"><i class="fa fa-search-plus"></i></a>
                             </div>
                             <div class="single_portfolio_content_inner">
-                                <span>Design, Photoshop</span>
-                                <h2><a href="#">Business Solution</a></h2>
+                                <span>Assignment Essay</span>
+                                <h2><a href="#">Short Custom Essays | Quiz | Tests</a></h2>
 
                             </div>
                         </div>
@@ -722,8 +728,8 @@
                                 <a class="portfolio-icon venobox vbox-item" data-gall="myportfolio" href="frontendIT/assets/images/portfolio/p4.jpg"><i class="fa fa-search-plus"></i></a>
                             </div>
                             <div class="single_portfolio_content_inner">
-                                <span>Software Engineer</span>
-                                <h2><a href="#">Company Project</a></h2>
+                                <span>Writing Projects</span>
+                                <h2><a href="#">Thesis | Project Proposals</a></h2>
 
                             </div>
                         </div>
@@ -741,8 +747,8 @@
                                 <a class="portfolio-icon venobox vbox-item" data-gall="myportfolio" href="frontendIT/assets/images/portfolio/p5.jpg"><i class="fa fa-search-plus"></i></a>
                             </div>
                             <div class="single_portfolio_content_inner">
-                                <span>Photoshop</span>
-                                <h2><a href="#">Mastering Web Design</a></h2>
+                                <span>Online Proctored Exam</span>
+                                <h2><a href="#">Peasonvue | Examity</a></h2>
 
                             </div>
                         </div>
@@ -760,8 +766,8 @@
                                 <a class="portfolio-icon venobox vbox-item" data-gall="myportfolio" href="frontendIT/assets/images/portfolio/p6.jpg"><i class="fa fa-search-plus"></i></a>
                             </div>
                             <div class="single_portfolio_content_inner">
-                                <span>Design, Photoshop</span>
-                                <h2><a href="#">Awesome Logo Design</a></h2>
+                                <span>Discussion Posts</span>
+                                <h2><a href="#">Discussion Response | Reflective Reviews</a></h2>
 
                             </div>
                         </div>
@@ -803,7 +809,7 @@
                     </div>
                     <div class="single-video text-center">
                         <div class="video-icon mrt-345">
-                            <h1 class="lead text-white">Assignment Analysis</h1>
+                            <h1 class="lead text-white">We are You Best Partner Ever</h1>
                         </div>
                     </div>
                 </div>
@@ -861,65 +867,65 @@
                 <div class="container-quote carousel-on">
                     <!--Testimonial 1-->
                     <div class="quote quote-text-3 hide-bottom" data-ppquote="li-quote-3">
-                        <p>'Managing everyday banking has finally become fun, fast and easy. Icing on the cake, customer support is super reactive: 5 stars!'</p>
+                        <p>'Best Decision Ever! Am glad to be able to spend more time with My family...Keep up with the good work :)'</p>
                         <div class="container-info">
                             <div class="pp"></div>
                             <div class="name">Tom Abel De</div>
-                            <div class="job">Digital Marketing</div>
+                            <div class="job">Student</div>
                         </div>
                     </div>
                     <!--Testimonial 2-->
                     <div class="quote quote-text-4 show" data-ppquote="li-quote-4">
-                        <p>'Qonto met my needs straight away. ng has finally become fun, fast andCustomer care is awesome! Period.'</p>
+                        <p>'Got quality grades..Absolutely worth every penny. I highly recommend them'</p>
                         <div class="container-info">
                             <div class="pp"></div>
                             <div class="name">Sanuka Santa</div>
-                            <div class="job">To To Company</div>
+                            <div class="job">Student</div>
                         </div>
                     </div>
                     <!--Testimonial 3-->
                     <div class="quote hide-bottom quote-text-5" data-ppquote="li-quote-5">
-                        <p>'With Qonto, I've been able to order MasterCard cards in seconds. My purchasing team can now be autonomous with their payments. Qonto is game changer.'</p>
+                        <p>'My product got the best description and top-notch reviews from them...Thank You So Much'</p>
                         <div class="container-info">
                             <div class="pp"></div>
                             <div class="name">Grégoire Pasquet</div>
-                            <div class="job">Solf Solution</div>
+                            <div class="job">Product Designer</div>
                         </div>
                     </div>
                     <!--Testimonial 4-->
                     <div class="quote hide-bottom quote-text-6" data-ppquote="li-quote-6">
-                        <p>'Qonto? Easy, fast, efficient. Traditionalng has finally become fun, fast and banks' hassles belong to the past!'</p>
+                        <p>'What a lifesaver! You guys just came in to my help when i needed it the most. Got stuck with my project and am glad they helped me to complete it way before the deadline'</p>
                         <div class="container-info">
                             <div class="pp"></div>
                             <div class="name">Nicolas Puran</div>
-                            <div class="job">CEO Founder</div>
+                            <div class="job">Project Manager</div>
                         </div>
                     </div>
                     <!--Testimonial 5-->
                     <div class="quote hide-bottom quote-text-7" data-ppquote="li-quote-7">
-                        <p>'Qonto? A flawless UX and a customer service ng has finally become fun, fast and that cares so much. This is just incredible!'</p>
+                        <p>'Got my proctored exam done in no time. their software made things real. i finaly got all I wanted. i will come back for your services any day. Thank You guys'</p>
                         <div class="container-info">
                             <div class="pp"></div>
                             <div class="name">Mathieu Jouhet</div>
-                            <div class="job">Freelance @Hello Mat</div>
+                            <div class="job">Networking Student</div>
                         </div>
                     </div>
                     <!--Testimonial 6-->
                     <div class="quote hide-bottom quote-text-8" data-ppquote="li-quote-8">
-                        <p>'I needed a bank similar to a SaaS for LiveMentor: ng has finally become fun, fast and I think I found it.'</p>
+                        <p>'Redoing software Application course and exam was boring. At least i got to save my time spend more time with family and friends. Best Service ever. I highly recommend.'</p>
                         <div class="container-info">
                             <div class="pp"></div>
                             <div class="name">Charles Jadran</div>
-                            <div class="job">Web Development</div>
+                            <div class="job">Business Student</div>
                         </div>
                     </div>
                     <!--Testimonial 7-->
                     <div class="quote hide-bottom quote-text-9" data-ppquote="li-quote-9">
-                        <p>'I can say 'Goodbye' to the banking pains I had to ng has finally become fun, fast and bear with, and 'hello' to a way to do finance that makes sense.'</p>
+                        <p>'I can say 'Goodbye' to the stress, anxiety, and fear of failing in my online class. At last I've got my solution. One of the best services around.'</p>
                         <div class="container-info">
                             <div class="pp"></div>
                             <div class="name">Digong Frando</div>
-                            <div class="job">CEO Officience</div>
+                            <div class="job">Accounts Student</div>
                         </div>
                     </div>
                     <!--Testimonial 8-->
@@ -928,43 +934,43 @@
                         <div class="container-info">
                             <div class="pp"></div>
                             <div class="name">Charles Samuelian</div>
-                            <div class="job">Director & Photo Man</div>
+                            <div class="job">Web Development Student</div>
                         </div>
                     </div>
                     <!--Testimonial 9-->
                     <div class="quote hide-bottom quote-text-11" data-ppquote="li-quote-11">
-                        <p>'I have been looking for a modern and efficient banking alternative that could support the development of my business. I'm just wondering why Qonto did not exist before!'</p>
+                        <p>'I’ve used other services but they ain’t nearly as good as this one. They keep their promises in terms of pricing and give out the discounts you're eligible to. The customer department is available all the time. The writers know proper English.'</p>
                         <div class="container-info">
                             <div class="pp"></div>
                             <div class="name">Khatry Firmanio</div>
-                            <div class="job">CEO Company</div>
+                            <div class="job">IT student</div>
                         </div>
                     </div>
                     <!--Testimonial 10-->
                     <div class="quote hide-bottom quote-text-13" data-ppquote="li-quote-13">
-                        <p>'That's just perfect - It rocks baby! ng has finally become fun, fast and You wanna apply at TheFamily? Use Qonto first.'</p>
+                        <p>'That's just perfect - We can't get any better than this? TakeMyITClass.com is the Deal'</p>
                         <div class="container-info">
                             <div class="pp"></div>
                             <div class="name">Jadran Parvej Imon</div>
-                            <div class="job">CEO Managar</div>
+                            <div class="job">Telecommunication Student</div>
                         </div>
                     </div>
                     <!--Testimonial 11-->
                     <div class="quote quote-text-1 hide-bottom" data-ppquote="li-quote-1">
-                        <p>'I wish I could have had Qonto ng has finally become fun, fast andenrolled in the Techstars Paris's first batch!'</p>
+                        <p>'I got an A grade in my term paper. Zero plagiarism? This was the perfect blend for my schedule and course work.'</p>
                         <div class="container-info">
                             <div class="pp"></div>
                             <div class="name">Bertier Luyt</div>
-                            <div class="job">Managing Director</div>
+                            <div class="job">Communication Student</div>
                         </div>
                     </div>
                     <!--Testimonial 12-->
                     <div class="quote quote-text-2 hide-bottom" data-ppquote="li-quote-2">
-                        <p>'Thanks to a slick interface and simple ng has finally become fun, fast and features, managing payments and expenses has become a piece of cake!'</p>
+                        <p>'Thank you! Well elaborated and understanding solutions for my assignments. Will come back for more...'</p>
                         <div class="container-info">
                             <div class="pp"></div>
                             <div class="name">Darpon Abir Khan</div>
-                            <div class="job">Founder Officience</div>
+                            <div class="job">Student</div>
                         </div>
                     </div>
                 </div>
@@ -996,103 +1002,6 @@
     <!----- End Techno Testimonial Area ----->
     <!--==================================================-->
 
-
-    <!--==================================================-->
-    <!----- Start Techno Blog Area ----->
-    <!--==================================================-->
-    <div class="blog_area bg_color2 pt-80 pb-70" id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section_title text_center mb-60 mt-3">
-                        <div class="section_sub_title uppercase mb-3">
-                            <h6>MORE INFO ABOUT</h6>
-                        </div>
-                        <div class="section_main_title">
-                            <h1>See Our Latest News</h1>
-                        </div>
-                        <div class="em_bar">
-                            <div class="em_bar_bg"></div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="single_blog text_center mb-4">
-                        <div class="single_blog_thumb">
-                            <a href="blog-details.html"><img src="frontendIT/assets/images/blog4.jpg" alt="" /></a>
-                        </div>
-                        <div class="single_blog_content pl-4 pr-4">
-                            <div class="techno_blog_meta shado_bg">
-                                <a href="#">Techno </a>
-                                <span class="meta-date pl-3">Augost 5, 2020</span>
-                            </div>
-                            <div class="blog_page_title pb-1 pt-3">
-                                <h3><a href="blog-details.html">The five devices you need to work anytime</a></h3>
-                            </div>
-                            <div class="blog_description">
-                                <p>Lorem ipsum dolor sit amet consectet adipisie cing elit sed eiusmod tempor incididunt on labore et dolore.  </p>
-                            </div>
-                            <div class="blog_page_button pb-4">
-                                <a href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="single_blog text_center mb-4">
-                        <div class="single_blog_thumb">
-                            <a href="blog-details.html"><img src="frontendIT/assets/images/blog1.jpg" alt="" /></a>
-                        </div>
-                        <div class="single_blog_content pl-4 pr-4">
-                            <div class="techno_blog_meta shado_bg">
-                                <a href="#">Techno </a>
-                                <span class="meta-date pl-3">Augost 5, 2020</span>
-                            </div>
-                            <div class="blog_page_title pb-1 pt-3">
-                                <h3><a href="blog-details.html">The five devices you need to work anytime</a></h3>
-                            </div>
-                            <div class="blog_description">
-                                <p>Lorem ipsum dolor sit amet consectet adipisie cing elit sed eiusmod tempor incididunt on labore et dolore.  </p>
-                            </div>
-                            <div class="blog_page_button pb-4">
-                                <a href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="single_blog text_center mb-4">
-                        <div class="single_blog_thumb">
-                            <a href="blog-details.html"><img src="frontendIT/assets/images/blog2.jpg" alt="" /></a>
-                        </div>
-                        <div class="single_blog_content pl-4 pr-4">
-                            <div class="techno_blog_meta shado_bg">
-                                <a href="#">Techno </a>
-                                <span class="meta-date pl-3">Augost 5, 2020</span>
-                            </div>
-                            <div class="blog_page_title pt-3 pb-1">
-                                <h3><a href="blog-details.html">The five devices you need to work anytime</a></h3>
-                            </div>
-                            <div class="blog_description">
-                                <p>Lorem ipsum dolor sit amet consectet adipisie cing elit sed eiusmod tempor incididunt on labore et dolore.  </p>
-                            </div>
-                            <div class="blog_page_button pb-4">
-                                <a href="blog-details.html">Read More <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!--==================================================-->
-    <!----- End Techno Blog Area ----->
-    <!--==================================================-->
-
     <!--==================================================-->
     <!----- Start Techno Contact Area ----->
     <!--==================================================-->
@@ -1118,7 +1027,8 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="quote_wrapper">
-                        <form id="contact_form" action="#" method="POST" >
+                        <form id="contact_form" action="{{route('post')}}" method="POST" >
+                            @csrf
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form_box mb-30">
