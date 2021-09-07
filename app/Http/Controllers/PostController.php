@@ -82,6 +82,10 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $post = Post::findOrFail($id);
+        $post->delete();
+
+        return redirect('/home')->with('success', 'Customer Query Deleted Successfully');
+
     }
 }

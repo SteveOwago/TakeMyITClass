@@ -1032,28 +1032,28 @@
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form_box mb-30">
-                                        <input type="text" name="name"  placeholder="Name">
+                                        <input type="text" name="name"  placeholder="Name" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form_box mb-30">
-                                        <input type="email" name="email" placeholder="Email Address">
+                                        <input type="email" name="email" placeholder="Email Address" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form_box mb-30">
-                                        <input type="text" name="phone" placeholder="Phone Number">
+                                        <input type="text" name="phone" placeholder="WhatsApp Phone Number" required>
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form_box mb-30">
-                                        <input type="text" name="subject" placeholder="Subject">
+                                        <input type="text" name="subject" placeholder="Subject" required>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-12">
                                     <div class="form_box mb-30">
-                                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write a Message"></textarea>
+                                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write a Message" required></textarea>
                                     </div>
                                     <div class="quote_btn text_center">
                                         <button class="btn" type="submit">Submit Query</button>
@@ -1144,7 +1144,7 @@
                             <img src="frontendIT/assets/images/fav-icon/logo-white.jpg" alt="" />
                         </div>
                         <div class="company-info-desc">
-                            <p>Condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus.
+                            <p>We are a team of professional experts in the IT, and Software engineering industry who are passionate and here to help you out to balance between work, online course and family time
                             </p>
                         </div>
                         <div class="follow-company-info pt-3">
@@ -1165,31 +1165,27 @@
                         <h4 class="widget-title pb-4">Our Services</h4>
                         <div class="menu-quick-link-container ml-4">
                             <ul id="menu-quick-link" class="menu">
-                                <li><a href="#">Marketing Strategy</a></li>
-                                <li><a href="#">Interior Design</a></li>
-                                <li><a href="#">Digital Services</a></li>
-                                <li><a href="#">Product Selling</a></li>
-                                <li><a href="#">Product Design</a></li>
-                                <li><a href="#">Social Marketing</a></li>
+                                <li><a href="#">Online IT Courses</a></li>
+                                <li><a href="#">Final Course Projects</a></li>
+                                <li><a href="#">Custom Essays</a></li>
+                                <li><a href="#">Proctored Exams and Quiz</a></li>
+                                <li><a href="#">Thesis and Dissertations</a></li>
+                                <li><a href="#">Coding and Programming Tasks</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="widget widgets-company-info">
-                        <h3 class="widget-title pb-4">Company Address</h3>
+                        <h3 class="widget-title pb-4">TakeMyITClass</h3>
                         <div class="company-info-desc">
-                            <p>Porem awesome dolor sitework amet, consetur acing elit, sed do eiusmod ligal
-                            </p>
+                            <p>Quality Above Everything</p>
                         </div>
                         <div class="footer-social-info">
-                            <p><span>Address :</span>54/1 New dhas sorini Asut, Melbord Austria.</p>
+                            <p><span>Phone :</span>254708444398</p>
                         </div>
                         <div class="footer-social-info">
-                            <p><span>Phone :</span>54786547521</p>
-                        </div>
-                        <div class="footer-social-info">
-                            <p><span>Email :</span>demo@example.com</p>
+                            <p><span>Email :</span>admin@takemyitclass.com</p>
                         </div>
 
                     </div>
@@ -1206,7 +1202,7 @@
                                 </div>
                                 <div class="recent-post-text">
                                     <h6><a href="#">
-                                            Tiktok Illegally collecting data sharing
+                                            The Best Student Platform
                                         </a>
                                     </h6>
                                     <span class="rcomment">December 12, 2020</span>
@@ -1251,10 +1247,59 @@
             </div>
         </div>
     </div>
+    <style>
+        #whatsAppLink {
+            position: fixed;
+            z-index: 9999;
+            float: left;
+            left: 1.3em;
+            top: 91%;
+            margin-top: -25px;
+            cursor: pointer;
+            min-width: 50px;
+            max-width: 240px;
+            color: #fff;
+            text-align: center;
+            padding: 12px 21px;
+            margin: 0 auto 0 auto;
+            background: #20B038;
+            -webkit-transition: All 0.5s ease;
+            -moz-transition: All 0.5s ease;
+            -o-transition: All 0.5s ease;
+            -ms-transition: All 0.5s ease;
+            transition: All 0.5s ease;
+            border-radius: 50px;
+        }
+        @media(max-width: 768px){
+            .visible-xs{
+                display: block;
+            }
+            .visible-lg{
+                display: none;
+            }
+        }
+        @media(min-width: 768px){
+            .visible-xs{
+                display: none;
+            }
+            .visible-lg{
+                display: inline-block;
+            }
+        }
+        strong{
+            color: #13425f !important;
+        }
+    </style>
     <!--==================================================-->
     <!----- End Techno Footer Middle Area ----->
     <!--==================================================-->
+    <a class="visible-lg" id="whatsAppLink" href="https://web.whatsapp.com/send?phone=254708444398&amp;text=Hello, I need some help with my online course"  target="_blank">
+        <i class="fa fa-whatsapp"></i>&nbsp;&nbsp; WhatsApp Us
+    </a>
 
+    <a class="visible-xs" id="whatsAppLink" href="https://api.whatsapp.com/send?phone=254708444398&amp;text=Hello, I need some help with my online course"  target="_blank">
+        <i class="fa fa-whatsapp"></i>&nbsp;&nbsp; WhatsApp Us
+    </a>
     <!-- jquery js -->
     <script type="text/javascript" src="frontendIT/assets/js/vendor/jquery-3.2.1.min.js"></script>
     <!-- bootstrap js -->

@@ -79,5 +79,67 @@
             @yield('content')
         </main>
     </div>
+    <style>
+        #whatsAppLink {
+            position: fixed;
+            z-index: 9999;
+            float: left;
+            left: 1.3em;
+            top: 91%;
+            margin-top: -25px;
+            cursor: pointer;
+            min-width: 50px;
+            max-width: 240px;
+            color: #fff;
+            text-align: center;
+            padding: 12px 21px;
+            margin: 0 auto 0 auto;
+            background: #20B038;
+            -webkit-transition: All 0.5s ease;
+            -moz-transition: All 0.5s ease;
+            -o-transition: All 0.5s ease;
+            -ms-transition: All 0.5s ease;
+            transition: All 0.5s ease;
+            border-radius: 50px;
+        }
+        @media(max-width: 768px){
+            .visible-xs{
+                display: block;
+            }
+            .visible-lg{
+                display: none;
+            }
+        }
+        @media(min-width: 768px){
+            .visible-xs{
+                display: none;
+            }
+            .visible-lg{
+                display: inline-block;
+            }
+        }
+        strong{
+            color: #13425f !important;
+        }
+    </style>
+    <!--==================================================-->
+    <!----- End Techno Footer Middle Area ----->
+    <!--==================================================-->
+    <a class="visible-lg" id="whatsAppLink" href="https://web.whatsapp.com/send?phone=254708444398&amp;text=Hello, I need some help with my online course"  target="_blank">
+        <i class="fa fa-whatsapp"></i>&nbsp;&nbsp; WhatsApp Us
+    </a>
+
+    <a class="visible-xs" id="whatsAppLink" href="https://api.whatsapp.com/send?phone=254708444398&amp;text=Hello, I need some help with my online course"  target="_blank">
+        <i class="fa fa-whatsapp"></i>&nbsp;&nbsp; WhatsApp Us
+    </a>
+    <script>
+        $('.delete-user').click(function(e){
+            e.preventDefault() // Don't post the form, unless confirmed
+            if (confirm('Are you sure?')) {
+                // Post the form
+                $(e.target).closest('form').submit() // Post the surrounding form
+            }
+        });
+    </script>
 </body>
 </html>

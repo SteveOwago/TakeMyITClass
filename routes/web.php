@@ -21,3 +21,4 @@ Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('dashboard');
 Route::post('/post', [App\Http\Controllers\PostController::class, 'store'])->name('post');
+Route::delete('/posts/{id}', [App\Http\Controllers\PostController::class, 'destroy']);
