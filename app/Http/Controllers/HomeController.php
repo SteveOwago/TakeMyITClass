@@ -22,9 +22,13 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(){
+        $posts = Post::orderBy('id', 'desc')->simplePaginate(5);
+        return view('home',compact('posts'));
+    }
+    public function customerQueries()
     {
-        $posts = Post::orderBy('id', 'desc')->paginate(10);
-        return view('home', compact('posts'));
+        $posts = Post::orderBy('id', 'desc')->simplePaginate(5);
+        return view('pages.customer-queries', compact('posts'));
     }
 }
